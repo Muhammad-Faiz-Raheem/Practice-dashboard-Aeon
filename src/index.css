@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-custom {
+  @apply overflow-auto; /* Ensure the scrollbar is visible */
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* .scrollbar-custom::-webkit-scrollbar-track {
+  @apply bg-gray-200; /* Track color */
+/* } */
+
+/* 
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  @apply bg-Blue-medium; /* Thumb color */
+/* border-radius: 6px; */ /* Rounded corners */
+/* } */
+
+/* 
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  @apply bg-Blue-dark;
+ /* Thumb color on hover */
+/* } */
