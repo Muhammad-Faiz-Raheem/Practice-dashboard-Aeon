@@ -97,7 +97,7 @@ function OrderList() {
       return;
     }
 
-    const searchedData = data.filter(
+    const searchedData = fakeData.filter(
       (item) =>
         item.id
           .toString()
