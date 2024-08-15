@@ -1,22 +1,21 @@
 import React from "react";
 import { IoIosMore } from "react-icons/io";
 import BorderBetween from "../../../ui/BorderBetween";
-import { formatCurrency } from "../../../utils/helper";
 
 /* eslint-disable react/prop-types */
 
-function ListItems({ data }) {
+function ListItems({ fakeData }) {
   return (
     <div>
-      {data?.map((dataItem, index) => (
-        <ListItem dataItem={dataItem} serialNo={index + 1} key={dataItem.id} />
+      {fakeData.map((data, index) => (
+        <ListItem data={data} serialNo={index + 1} key={data.id} />
       ))}
     </div>
   );
 }
 
-function ListItem({ dataItem, serialNo }) {
-  const { id, date, customerName, location, amount, status } = dataItem;
+function ListItem({ data, serialNo }) {
+  const { id, date, customerName, location, amount, status } = data;
 
   const checkStatus = status.split(" ").join("").toLowerCase();
 
@@ -29,7 +28,7 @@ function ListItem({ dataItem, serialNo }) {
         <span>{date}</span>
         <span>{customerName}</span>
         <span>{location}</span>
-        <span>{formatCurrency(amount)}</span>
+        <span>{amount}</span>
         <div>
           <div className="flex w-fit items-center gap-2 rounded-lg bg-white px-3 py-2 shadow-xl shadow-black/5">
             <span

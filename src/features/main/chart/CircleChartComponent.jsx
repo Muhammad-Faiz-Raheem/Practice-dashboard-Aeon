@@ -29,7 +29,7 @@ function CircleChartComponent() {
   return (
     <div className="p-6">
       <div className="flex items-center justify-between">
-        <h className="text-xl font-medium">Earnings</h>
+        <span className="text-xl font-medium">Earnings</span>
         <span className="cursor-pointer text-2xl">
           <IoIosMore />
         </span>

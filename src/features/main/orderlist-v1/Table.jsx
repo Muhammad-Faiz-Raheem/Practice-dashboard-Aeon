@@ -4,11 +4,11 @@ import ListItems from "./ListItems";
 
 /* eslint-disable react/prop-types */
 
-function Table({ data, onSetData }) {
+function Table({ fakeData }) {
   return (
     <div className="mt-6 px-2">
-      <TableHeader onSetData={onSetData} />
-      <ListItems data={data} />
+      <TableHeader />
+      <ListItems fakeData={fakeData} />
     </div>
   );
 }

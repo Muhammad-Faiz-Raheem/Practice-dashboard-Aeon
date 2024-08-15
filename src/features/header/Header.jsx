@@ -25,9 +25,9 @@ function Header({ isOpen, onIsOpen }) {
       <div className="row-start-2 row-end-3 px-12 sm:col-start-2 sm:col-end-3 sm:row-start-1 sm:row-end-2 sm:px-0">
         <div className="flex justify-between gap-x-2">
           <div>
-            <h1 className="text-[15px] font-medium sm:text-[20px] md:text-[24px] min-[1185px]:text-[28px]">
+            <span className="text-[15px] font-medium sm:text-[20px] md:text-[24px] min-[1185px]:text-[28px]">
               Welcome Back, Faiz
-            </h1>
+            </span>
             <p className="text-[7px] font-normal leading-3 text-Blue-medium sm:text-[12px] md:text-[12px] min-[1185px]:text-[16px]">
               Here is the information about all your orders
             </p>

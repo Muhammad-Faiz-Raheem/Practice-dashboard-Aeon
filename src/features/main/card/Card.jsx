@@ -8,9 +8,9 @@ function Card({ label, value, icon, amount, arrow, percentage }) {
     <div>
       <div className="flex w-48 justify-between">
         <div>
-          <h1 className="text-[28px] font-semibold">
+          <span className="block text-[28px] font-semibold">
             {formatNumberWithCommas(value)}
-          </h1>
+          </span>
           <span className="text-base font-normal">{label}</span>
         </div>
         <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-2xl text-Blue-dark shadow-lg shadow-black/10">
