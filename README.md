@@ -1,4 +1,6 @@
-# Front-End-Practice-01
+# Dashboard
+
+A comprehensive dashboard with visuals like charts and tables with sort functionality for frontend work with React and TailwindCSS
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
